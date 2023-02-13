@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Shortest Job First (SJF) Scheduling Algorithm</title>
+  </head>
+  <body>
+    <header>
+      <h1>Shortest Job First (SJF) Scheduling Algorithm</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#how-sjf-works">How SJF Works</a></li>
+        <li><a href="#advantages">Advantages of SJF</a></li>
+        <li><a href="#disadvantages">Disadvantages of SJF</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Shortest Job First (SJF) is a scheduling algorithm used to schedule processes in a computer's operating system. The algorithm works by assigning priority to the process with the shortest execution time. This ensures that the process with the least amount of CPU time is executed first, thereby reducing the average waiting time for all processes and improving overall system performance.</p>
+      </section>
+      <section id="how-sjf-works">
+        <h2>How SJF Works</h2>
+        <p>SJF uses two key metrics to determine the priority of each process: arrival time and CPU burst time. The arrival time is the time at which a process enters the ready queue and becomes eligible to run. The CPU burst time is the amount of time required by a process to complete its execution. The algorithm assigns higher priority to the process with the shortest CPU burst time and executes it first.</p>
+      </section>
+      <section id="advantages">
+        <h2>Advantages of SJF</h2>
+        <ul>
+          <li>Improved CPU utilization</li>
+          <li>Reduced waiting time for processes</li>
+          <li>Better throughput and response time</li>
+          <li>Efficient use of system resources</li>
+        </ul>
+      </section>
+      <section id="disadvantages">
+        <h2>Disadvantages of SJF</h2>
+        <ul>
+          <li>Difficulty in predicting process execution time</li>
+          <li>Unpredictable behaviour in case of long processes</li>
+          <li>Starvation of longer processes</li>
+          <li>Inappropriate for real-time systems</li>
+        </ul>
+      </section>
+      <section id="Conclusion">
+        <h2>Conclusion</h2>
+        <p>n this blog, we discussed the shortest job first scheduling algorithm. We learned how to decide the order in which the processes get executed, and then we wrote a program for its Implementation.
+
+            In this algorithm, we always choose the process with the shortest burst time and until the current process gets executed, we maintain all incoming processes in a waiting queue. Once the current process ends, we check the waiting queue for the process with the shortest execution time, and then we begin executing that process.
+            
+            This algorithm is suitable for batch type processing as to decide which process must be executed first, we must know its burst time beforehand. It works more efficiently than the naive first-come-first-serve scheduling algorithm, by focusing on executing the shortest process first. Read more about search algorithms here, Don’t forget to practice similar problems on code studio as well. If you liked this blog, share it with your friends.</p>
